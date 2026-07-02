@@ -140,3 +140,13 @@ Everything — playback, cutting, merging, transcription — happens on your mac
 ## License notes
 
 LaluKit's own code is MIT. It bundles [FFmpeg](https://ffmpeg.org) (GPL build by BtbN), [whisper.cpp](https://github.com/ggml-org/whisper.cpp) (MIT) with NVIDIA CUDA runtime libraries (redistributed per NVIDIA's CUDA EULA redistributable terms), and Noto fonts (OFL). Whisper models are MIT-licensed by OpenAI. UI fonts: Inter, JetBrains Mono, Cairo, Noto Sans Arabic (all OFL).
+
+---
+
+## About this project
+
+Built solo by **Jarallah Al-Jarallah**, a Computer Science graduate from Majmaah University. I designed the architecture, the FFmpeg/whisper.cpp integration strategy, the Arabic RTL UI, and drove every feature decision — using Claude Code as an AI pair-programmer throughout development.
+
+📧 jarallahx@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/jarallah-al-jarallah)  
+🔗 [GitHub](https://github.com/Jarallahx)
