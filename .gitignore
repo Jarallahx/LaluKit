@@ -1,0 +1,10 @@
+node_modules/
+out/
+dist/
+resources/bin/
+resources/icons/icon.ico
+resources/icons/icon-*.png
+scripts/e2e/.work/
+shots/
+*.log
+.DS_Store

@@ -1,0 +1,106 @@
+/* LaluKit design tokens. Coral = editing actions, violet = AI features. */
+
+:root {
+  --font-ui: 'Inter Variable', 'Noto Sans Arabic', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'Cascadia Mono', Consolas, monospace;
+}
+
+/* Arabic UI uses Cairo — designed for Arabic with harmonized Latin. */
+:root[lang='ar'] {
+  --font-ui: 'Cairo Variable', 'Noto Sans Arabic', 'Inter Variable', 'Segoe UI', system-ui, sans-serif;
+}
+
+:root {
+
+  --r-s: 8px;
+  --r-m: 12px;
+  --r-l: 16px;
+  --r-xl: 22px;
+
+  --titlebar-h: 40px;
+
+  --ease: cubic-bezier(0.33, 0.0, 0.15, 1);
+  --t-fast: 0.16s var(--ease);
+  --t-med: 0.3s var(--ease);
+  --t-slow: 0.5s var(--ease);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg0: #0a0c10;
+  --bg1: #0f1218;
+  --bg2: #151923;
+  --bg3: #1d2330;
+  --bg4: #252d3e;
+  --stage: #06070a;
+  --line: rgba(148, 163, 184, 0.1);
+  --line-strong: rgba(148, 163, 184, 0.22);
+  --text1: #edf1f7;
+  --text2: #9aa3b3;
+  --text3: #5d6779;
+  --accent: #ff6a4d;
+  --accent-2: #ff9357;
+  --accent-text: #ff8366;
+  --accent-soft: rgba(255, 106, 77, 0.15);
+  --accent-glow: rgba(255, 106, 77, 0.4);
+  --ai: #8f7aff;
+  --ai-2: #c08bff;
+  --ai-text: #a795ff;
+  --ai-soft: rgba(143, 122, 255, 0.15);
+  --ok: #34d399;
+  --ok-soft: rgba(52, 211, 153, 0.14);
+  --warn: #fbbf24;
+  --warn-soft: rgba(251, 191, 36, 0.13);
+  --err: #f87171;
+  --err-soft: rgba(248, 113, 113, 0.14);
+  --shadow-1: 0 2px 10px rgba(0, 0, 0, 0.35);
+  --shadow-2: 0 18px 50px rgba(0, 0, 0, 0.55), 0 2px 10px rgba(0, 0, 0, 0.4);
+  --veil: rgba(4, 5, 8, 0.62);
+  --thumb-skeleton: rgba(148, 163, 184, 0.07);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg0: #eef1f6;
+  --bg1: #f7f9fc;
+  --bg2: #ffffff;
+  --bg3: #edf0f6;
+  --bg4: #e2e8f2;
+  --stage: #14161c;
+  --line: rgba(15, 23, 42, 0.09);
+  --line-strong: rgba(15, 23, 42, 0.18);
+  --text1: #131926;
+  --text2: #5a6372;
+  --text3: #939cad;
+  --accent: #f04f31;
+  --accent-2: #ff7d42;
+  --accent-text: #e34626;
+  --accent-soft: rgba(240, 79, 49, 0.12);
+  --accent-glow: rgba(240, 79, 49, 0.3);
+  --ai: #6d5ae6;
+  --ai-2: #9d7bff;
+  --ai-text: #5f4cd6;
+  --ai-soft: rgba(109, 90, 230, 0.12);
+  --ok: #0f9d6c;
+  --ok-soft: rgba(15, 157, 108, 0.12);
+  --warn: #b97a08;
+  --warn-soft: rgba(185, 122, 8, 0.12);
+  --err: #dc4848;
+  --err-soft: rgba(220, 72, 72, 0.11);
+  --shadow-1: 0 2px 10px rgba(15, 23, 42, 0.08);
+  --shadow-2: 0 18px 50px rgba(15, 23, 42, 0.18), 0 2px 10px rgba(15, 23, 42, 0.08);
+  --veil: rgba(240, 243, 248, 0.6);
+  --thumb-skeleton: rgba(15, 23, 42, 0.06);
+}
+
+/* Theme switches animate; the class is applied for the duration of the fade
+   so the transitions don't tax every other interaction. */
+html.theme-anim,
+html.theme-anim * {
+  transition:
+    background-color 0.4s var(--ease),
+    border-color 0.4s var(--ease),
+    color 0.4s var(--ease),
+    fill 0.4s var(--ease),
+    box-shadow 0.4s var(--ease) !important;
+}

@@ -1,0 +1,36 @@
+appId: com.lalukit.app
+productName: LaluKit
+copyright: Copyright © 2026 LaluKit
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - out/**/*
+  - "!**/*.map"
+asar: true
+# onnxruntime ships native .node binaries that must live outside the asar.
+asarUnpack:
+  - "**/*.node"
+  - "node_modules/onnxruntime-node/**"
+compression: normal
+npmRebuild: false
+extraResources:
+  - from: resources/bin
+    to: bin
+    filter: ["**/*"]
+  - from: resources/fonts
+    to: fonts
+    filter: ["**/*"]
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+  icon: resources/icons/icon.ico
+  artifactName: LaluKit-Setup-${version}.${ext}
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  shortcutName: LaluKit
+  uninstallDisplayName: LaluKit
+  deleteAppDataOnUninstall: false

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(foreach \\($o in 600,1020,1440\\) { Write-Output \"==================== offset=$o ====================\"; npx tsx scripts/verify-precise-timing.mts $o 240 2>&1 | Out-String })",
+      "PowerShell(npm run *)",
+      "PowerShell(foreach \\($o in 180,600,1020\\) { Write-Output \"==================== offset=$o ====================\"; npx tsx scripts/verify-precise-timing.mts $o 240 2>&1 | Out-String })",
+      "PowerShell(npx tsx scripts/verify-precise-timing.mts 180 240 2>&1 | Out-String)",
+      "PowerShell(node scripts/smoke.mjs subs subs-transcript 2>&1 | Out-String)"
+    ]
+  }
+}
