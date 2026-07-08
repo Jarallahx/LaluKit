@@ -3,9 +3,9 @@
 Precision video cutting, merging and AI subtitles — in a fast, beautiful desktop app that runs **fully offline**. No accounts, no uploads, no telemetry.
 
 ![stack](https://img.shields.io/badge/Electron-React%20%2B%20TypeScript-2ea) ![engines](https://img.shields.io/badge/engines-FFmpeg%20%2B%20whisper.cpp-f60) ![gpu](https://img.shields.io/badge/GPU-CUDA%20%2B%20NVENC-76b900)
-![Screenshot (1)](screenshot.png)
-![Screenshot (2)](screenshot.png)
-![Screenshot (3)](screenshot.png)
+![LaluKit home screen](Screenshot(1).png)
+![LaluKit timeline editor](Screenshot(1).png)
+![LaluKit subtitles workspace](Screenshot(1).png)
 
 ## Why this stack
 
