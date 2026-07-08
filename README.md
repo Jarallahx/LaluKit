@@ -4,8 +4,8 @@ Precision video cutting, merging and AI subtitles — in a fast, beautiful deskt
 
 ![stack](https://img.shields.io/badge/Electron-React%20%2B%20TypeScript-2ea) ![engines](https://img.shields.io/badge/engines-FFmpeg%20%2B%20whisper.cpp-f60) ![gpu](https://img.shields.io/badge/GPU-CUDA%20%2B%20NVENC-76b900)
 ![LaluKit home screen](Screenshot(1).png)
-![LaluKit timeline editor](Screenshot(1).png)
-![LaluKit subtitles workspace](Screenshot(1).png)
+![LaluKit timeline editor](Screenshot(2).png)
+![LaluKit subtitles workspace](Screenshot(3).png)
 
 ## Why this stack
 
